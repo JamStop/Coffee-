@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BF6DD8B8C93F114A795F6CD5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36E953CF3CE6473E0A9094D /* Pods.framework */; };
+		BFC402C11C9DE8FC00CD159F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */; };
+		BFC402C21C9DE8FC00CD159F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */; };
+		BFC402C31C9DE8FC00CD159F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */; };
 		BFFD86F61C9DDD4600AABCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD86F51C9DDD4600AABCDF /* AppDelegate.swift */; };
 		BFFD86FD1C9DDD4600AABCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFD86FC1C9DDD4600AABCDF /* Assets.xcassets */; };
 		BFFD87001C9DDD4600AABCDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFD86FE1C9DDD4600AABCDF /* LaunchScreen.storyboard */; };
@@ -16,6 +19,9 @@
 /* Begin PBXFileReference section */
 		2C3A677699C1750318C80BF3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4A66A8452147826A67298ACD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		BFFD86F21C9DDD4600AABCDF /* Coffee?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFD86F51C9DDD4600AABCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFFD86FC1C9DDD4600AABCDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,7 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC402C31C9DE8FC00CD159F /* FBSDKShareKit.framework in Frameworks */,
 				BF6DD8B8C93F114A795F6CD5 /* Pods.framework in Frameworks */,
+				BFC402C11C9DE8FC00CD159F /* FBSDKCoreKit.framework in Frameworks */,
+				BFC402C21C9DE8FC00CD159F /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +198,9 @@
 		C3ABFA5F555563E0DB7A195C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */,
+				BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */,
+				BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */,
 				D36E953CF3CE6473E0A9094D /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -419,6 +431,10 @@
 			baseConfigurationReference = 4A66A8452147826A67298ACD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Coffee?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JY.Coffee-";
@@ -431,6 +447,10 @@
 			baseConfigurationReference = 2C3A677699C1750318C80BF3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Coffee?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JY.Coffee-";
