@@ -8,23 +8,26 @@
 
 import UIKit
 import FBSDKCoreKit
+import QuadratTouch
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    
     /**
      Typically used for session setups, and other global application property sets. However, this particular method can get particularly loaded if relied on too much, and there are often better places to set these kinds of properties.
     */
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
+        
+        // Facebook Setup
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        // Foursquare Setup
+        setupFoursquareSession()
     
         return true
     }
-    
     
     /**
      Activates the Facebook SDK app events upon application launch or switch to.
@@ -34,9 +37,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKAppEvents.activateApp()
     }
     
-    
+    /**
+     Check whether the url to be opened should be done through Foursquare or Facebook. If both are false, then iOS will handle the url.
+    */
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+        
+        let delegateUrlToThirdParty = FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation) || Session.sharedSession().handleURL(url)
+        
+        return delegateUrlToThirdParty
+    }
+    
+    /**
+     Retrieves the Foursquare keys from Config.plist (In actual production, my Config.plist keys will not be publically available on Github. Instead, it would be replaced with a Config.plist with empty keys
+    */
+    private func setupFoursquareSession() {
+        
+        // During debug, I want to crash under the scenerio of unwrapping failures.
+        guard let plistPath = NSBundle.mainBundle().pathForResource("Config", ofType: "plist") else {
+            fatalError("Failed to access/unwrap the Config plist path")
+        }
+        guard let config = NSDictionary.init(contentsOfFile: plistPath) else {
+            fatalError("Failed to convert plistPath into valid NSDictionary")
+        }
+        guard let foursquareKeys = config["FoursquareAPI"] else {
+            fatalError("Failed to access FoursquareAPI key")
+        }
+        
+        // These are OK to force unwrap. After the above unwrap passes, there should be no scenerio in which these are nil
+        let clientId = foursquareKeys["ClientID"] as! String
+        let clientSecret = foursquareKeys["ClientSecret"] as! String
+        
+        // Rest of Foursquare setup
+        let client = Client(
+            clientID: clientId,
+            clientSecret: clientSecret,
+            redirectURL: ""
+        )
+        
+        var configuration = Configuration(client: client)
+        configuration.mode = "foursquare"
+        configuration.shouldControllNetworkActivityIndicator = true
+        Session.setupSharedSessionWithConfiguration(configuration)
+        
     }
 
 
