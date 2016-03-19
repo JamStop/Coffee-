@@ -11,6 +11,7 @@
 		BFC402C11C9DE8FC00CD159F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */; };
 		BFC402C21C9DE8FC00CD159F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */; };
 		BFC402C31C9DE8FC00CD159F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */; };
+		BFC402C51C9DEB4000CD159F /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFC402C41C9DEB4000CD159F /* Config.plist */; };
 		BFFD86F61C9DDD4600AABCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD86F51C9DDD4600AABCDF /* AppDelegate.swift */; };
 		BFFD86FD1C9DDD4600AABCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFD86FC1C9DDD4600AABCDF /* Assets.xcassets */; };
 		BFFD87001C9DDD4600AABCDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFD86FE1C9DDD4600AABCDF /* LaunchScreen.storyboard */; };
@@ -22,6 +23,7 @@
 		BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		BFC402C41C9DEB4000CD159F /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		BFFD86F21C9DDD4600AABCDF /* Coffee?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFD86F51C9DDD4600AABCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFFD86FC1C9DDD4600AABCDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				BFFD86FC1C9DDD4600AABCDF /* Assets.xcassets */,
 				BFFD86FE1C9DDD4600AABCDF /* LaunchScreen.storyboard */,
 				BFFD87011C9DDD4600AABCDF /* Info.plist */,
+				BFC402C41C9DEB4000CD159F /* Config.plist */,
 			);
 			path = "Coffee?";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFD87001C9DDD4600AABCDF /* LaunchScreen.storyboard in Resources */,
+				BFC402C51C9DEB4000CD159F /* Config.plist in Resources */,
 				BFFD86FD1C9DDD4600AABCDF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
