@@ -19,7 +19,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupLocationManager()
     }
     
     // MARK: - Alert Presentations
@@ -46,6 +46,23 @@ class MapViewController: UIViewController {
         alertController.addAction(okAction)
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    private func setupLocationManager() {
+        locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        let status = CLLocationManager.authorizationStatus()
+        if status == .NotDetermined {
+            self.locationManager.requestWhenInUseAuthorization()
+        } else if status == CLAuthorizationStatus.AuthorizedWhenInUse
+            || status == CLAuthorizationStatus.AuthorizedAlways {
+                self.locationManager.startUpdatingLocation()
+        } else {
+            showNoPermissionsAlert()
+        }
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startMonitoringSignificantLocationChanges()
+        locationManager.startUpdatingLocation()
+    }
 
 }
 
@@ -61,4 +78,10 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         showErrorAlert(error)
     }
+    
+    func locationManager(manager: CLLocationManager,
+        didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+            viewModel.location = newLocation
+    }
+
 }

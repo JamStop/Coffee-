@@ -8,10 +8,13 @@
 
 import Foundation
 import RxSwift
+import CoreLocation
 
-struct MapViewModel {
+class MapViewModel {
     
     let FSApi = FoursquareAPI()
+    
+    var location: CLLocation!
 
     
 }
