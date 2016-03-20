@@ -42,9 +42,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     */
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         
-        let delegateUrlToThirdParty = FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation) || Session.sharedSession().handleURL(url)
+//        let delegateUrlToThirdParty = FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation) || Session.sharedSession().handleURL(url)
         
-        return delegateUrlToThirdParty
+        if url.scheme.isEqual("fb1564778950516704") {
+            return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation) || Session.sharedSession().handleURL(url)
+        }
+        else if url.scheme.isEqual("iOSCoffee") {
+            return Session.sharedSession().handleURL(url)
+        }
+        
+        return false
     }
     
     /**
