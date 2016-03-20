@@ -14,6 +14,7 @@ class MapViewController: UIViewController {
     // MARK: - Properties
     let viewModel = MapViewModel()
     let locationManager = CLLocationManager()
+    @IBOutlet weak var mainView: MapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

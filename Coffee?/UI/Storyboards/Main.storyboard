@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3Xa-g6-LSJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="O0E-Ae-tkv">
             <objects>
-                <viewController id="3Xa-g6-LSJ" sceneMemberID="viewController">
+                <viewController id="3Xa-g6-LSJ" customClass="MapViewController" customModule="Coffee_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FNx-hW-4cH"/>
                         <viewControllerLayoutGuide type="bottom" id="9Xh-MK-tzB"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PbH-VC-dcs">
+                    <view key="view" contentMode="scaleToFill" id="PbH-VC-dcs" customClass="MapView" customModule="Coffee_" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-SW-fPa">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BNT-SW-fPa" secondAttribute="trailing" constant="-20" id="39d-1T-SGH"/>
+                            <constraint firstItem="BNT-SW-fPa" firstAttribute="top" secondItem="PbH-VC-dcs" secondAttribute="topMargin" id="6eU-gt-CMn"/>
+                            <constraint firstItem="BNT-SW-fPa" firstAttribute="leading" secondItem="PbH-VC-dcs" secondAttribute="leadingMargin" constant="-20" id="dJE-TU-gT0"/>
+                            <constraint firstItem="9Xh-MK-tzB" firstAttribute="top" secondItem="BNT-SW-fPa" secondAttribute="bottom" id="xs1-oF-bCz"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mainView" destination="PbH-VC-dcs" id="XGc-0T-yHp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTJ-UV-8SU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

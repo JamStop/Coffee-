@@ -7,15 +7,11 @@
 //
 
 import UIKit
+import MapKit
 
 class MapView: UIView {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
+    // MARK: - View Outlets
+    @IBOutlet weak var mapView: MKMapView!
 
 }
