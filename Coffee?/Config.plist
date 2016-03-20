@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Config.plist
-   Coffee?
-
-   Created by Jimmy Yue on 3/19/16.
-   Copyright (c) 2016 Jimmy Yue. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>FoursquareAPI</key>
-        <dict>
-            <key>ClientID</key>
-            <string>YOUR CLIENT ID HERE</string>
-            <key>ClientSecret</key>
-            <string>YOUR CLIENT SECRET HERE</string>
-        </dict>
-    </dict>
+<dict>
+	<key>FoursquareAPI</key>
+	<dict>
+		<key>ClientID</key>
+		<string>Y1TCYHHOT5VGGH3USC0RPVSEANDJJUQEUNDVBXGIWS34IGJY</string>
+		<key>ClientSecret</key>
+		<string>5LXJ3VSI2WVOCPUID3ES5QIJCHYOTLDNYVQXZAKBOR1JKPOS</string>
+	</dict>
+</dict>
 </plist>
