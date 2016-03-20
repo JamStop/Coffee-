@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let client = Client(
             clientID: clientId,
             clientSecret: clientSecret,
-            redirectURL: ""
+            redirectURL: "iOSCoffee://"
         )
         
         var configuration = Configuration(client: client)
