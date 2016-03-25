@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class MapViewController: UIViewController {
     
@@ -47,9 +48,10 @@ class MapViewController: UIViewController {
         self.presentViewController(alertController, animated: true, completion: nil)
     }
     
+    // MARK: - Delegate Setups
     private func setupLocationManager() {
         locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         let status = CLLocationManager.authorizationStatus()
         if status == .NotDetermined {
             self.locationManager.requestWhenInUseAuthorization()
@@ -60,12 +62,15 @@ class MapViewController: UIViewController {
             showNoPermissionsAlert()
         }
         locationManager.requestWhenInUseAuthorization()
-        locationManager.startMonitoringSignificantLocationChanges()
-        locationManager.startUpdatingLocation()
+    }
+    
+    private func setupMapView() {
+        mainView.mapView.delegate = self
     }
 
 }
 
+// MARK: - CLLocationManagerDelegate
 extension MapViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .Denied || status == .Restricted {
@@ -79,9 +84,27 @@ extension MapViewController: CLLocationManagerDelegate {
         showErrorAlert(error)
     }
     
-    func locationManager(manager: CLLocationManager,
-        didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
-            viewModel.location = newLocation
+//    func locationManager(manager: CLLocationManager,
+//        didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+//            self.locationManager.stopUpdatingLocation()
+//            viewModel.location = newLocation
+//            mainView.goToLocation(newLocation)
+//    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        mainView.goToLocation(location)
+        self.locationManager.stopUpdatingLocation()
     }
 
+}
+
+// MARK: - MKMapViewDelegate
+extension MapViewController: MKMapViewDelegate {
+    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+    
+        guard let location = userLocation.location else { fatalError("Could not parse user location") }
+        viewModel.location = location
+        
+    }
 }

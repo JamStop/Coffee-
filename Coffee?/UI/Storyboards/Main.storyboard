@@ -29,6 +29,9 @@
                             <constraint firstItem="BNT-SW-fPa" firstAttribute="leading" secondItem="PbH-VC-dcs" secondAttribute="leadingMargin" constant="-20" id="dJE-TU-gT0"/>
                             <constraint firstItem="9Xh-MK-tzB" firstAttribute="top" secondItem="BNT-SW-fPa" secondAttribute="bottom" id="xs1-oF-bCz"/>
                         </constraints>
+                        <connections>
+                            <outlet property="mapView" destination="BNT-SW-fPa" id="J91-Ib-X2I"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
