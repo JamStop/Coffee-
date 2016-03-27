@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1F19E91CA8825300EC844E /* JSONVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19E81CA8825300EC844E /* JSONVenue.swift */; };
+		BF1F19EB1CA8829400EC844E /* JSONLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19EA1CA8829400EC844E /* JSONLocation.swift */; };
+		BF1F19ED1CA883EB00EC844E /* JSONContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19EC1CA883EB00EC844E /* JSONContact.swift */; };
+		BF1F19EF1CA88A7A00EC844E /* RealmVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19EE1CA88A7A00EC844E /* RealmVenue.swift */; };
+		BF1F19F11CA88A8B00EC844E /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19F01CA88A8B00EC844E /* RealmHelper.swift */; };
+		BF1F19F31CA88A9300EC844E /* RealmVenues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19F21CA88A9300EC844E /* RealmVenues.swift */; };
 		BF6DD8B8C93F114A795F6CD5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36E953CF3CE6473E0A9094D /* Pods.framework */; };
 		BFC402C11C9DE8FC00CD159F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */; };
 		BFC402C21C9DE8FC00CD159F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */; };
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		2C3A677699C1750318C80BF3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4A66A8452147826A67298ACD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BF1F19E81CA8825300EC844E /* JSONVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONVenue.swift; sourceTree = "<group>"; };
+		BF1F19EA1CA8829400EC844E /* JSONLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLocation.swift; sourceTree = "<group>"; };
+		BF1F19EC1CA883EB00EC844E /* JSONContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONContact.swift; sourceTree = "<group>"; };
+		BF1F19EE1CA88A7A00EC844E /* RealmVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVenue.swift; sourceTree = "<group>"; };
+		BF1F19F01CA88A8B00EC844E /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		BF1F19F21CA88A9300EC844E /* RealmVenues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVenues.swift; sourceTree = "<group>"; };
 		BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -94,6 +106,9 @@
 		BFC402B31C9DE12A00CD159F /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F19E81CA8825300EC844E /* JSONVenue.swift */,
+				BF1F19EA1CA8829400EC844E /* JSONLocation.swift */,
+				BF1F19EC1CA883EB00EC844E /* JSONContact.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -108,6 +123,9 @@
 		BFC402B51C9DE12A00CD159F /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F19EE1CA88A7A00EC844E /* RealmVenue.swift */,
+				BF1F19F01CA88A8B00EC844E /* RealmHelper.swift */,
+				BF1F19F21CA88A9300EC844E /* RealmVenues.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -347,10 +365,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1F19EB1CA8829400EC844E /* JSONLocation.swift in Sources */,
+				BF1F19F11CA88A8B00EC844E /* RealmHelper.swift in Sources */,
 				BFFD86F61C9DDD4600AABCDF /* AppDelegate.swift in Sources */,
+				BF1F19ED1CA883EB00EC844E /* JSONContact.swift in Sources */,
 				BFC402D01C9F4F8C00CD159F /* FoursquareAPI.swift in Sources */,
 				BFC402CC1C9F4F6900CD159F /* MapView.swift in Sources */,
+				BF1F19E91CA8825300EC844E /* JSONVenue.swift in Sources */,
 				BFC402CA1C9F4F4500CD159F /* MapViewController.swift in Sources */,
+				BF1F19EF1CA88A7A00EC844E /* RealmVenue.swift in Sources */,
+				BF1F19F31CA88A9300EC844E /* RealmVenues.swift in Sources */,
 				BFC402CE1C9F4F7D00CD159F /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

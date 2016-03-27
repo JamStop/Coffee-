@@ -94,6 +94,7 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         mainView.goToLocation(location)
+        viewModel.location = location
         self.locationManager.stopUpdatingLocation()
     }
 
