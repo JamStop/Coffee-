@@ -17,8 +17,8 @@ struct JSONLocation: Decodable {
     // MARK: Properties
     
     let formattedAddress: [String]? // NOTE: - FourSquare's formatted address, in which the first item is always the full address
-    let lat: Float?
-    let lng: Float?
+    let lat: Double?
+    let lng: Double?
     let distance: Int?
     
     init?(json: JSON) {

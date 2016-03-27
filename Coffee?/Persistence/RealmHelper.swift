@@ -12,6 +12,8 @@ import RxSwift
 
 class RealmHelper {
     
+    typealias JSON = [String:AnyObject]
+    
     enum RealmError: ErrorType {
         case ErrorDownloadingImage(error: NSError)
         case ErrorParsingJSON(message: String)
@@ -23,7 +25,37 @@ class RealmHelper {
     let disposeBag = DisposeBag()
     
     // MARK: - Public helper function
+    func setNearbyVenuesWithJSONItems(items: [JSON]) -> RealmVenues {
+        let venues = JSONItemsArrayToRealmVenues(items)
+        try! realm.write({
+            realm.add(venues, update: true)
+        })
+        return venues
+    }
     
     // MARK: - JSON Conversion
-    private func JSONVenueArrayToRealmVenues
+    private func JSONItemsArrayToRealmVenues(items: [JSON]) -> RealmVenues {
+        let venues = RealmVenues()
+        venues.id = 0
+        for item in items {
+            guard let venue = item["venue"] else { fatalError("Failed to retrieve venue") }
+            guard let venueJson = JSONVenue(json: venue as! [String:AnyObject]) else { fatalError("Failed to parse venue") }
+            
+            // "Unsafe" block. However, any failure would have occured in the JSONVenue casting, so these unwraps are safe.
+            let newVenue = RealmVenue()
+            newVenue.id = venueJson.id!
+            newVenue.name = venueJson.name!
+            newVenue.address = venueJson.location!.formattedAddress![0]
+            newVenue.lng = venueJson.location!.lng!
+            newVenue.lat = venueJson.location!.lat!
+//            newVenue.phone = venueJson.contact!.formattedPhone ?? ""
+            newVenue.verified = venueJson.verified!
+//            newVenue.url = venueJson.url!
+            newVenue.rating = venueJson.rating!
+            
+            venues.venues.append(newVenue)
+        }
+        
+        return venues
+    }
 }

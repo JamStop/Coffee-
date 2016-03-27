@@ -27,5 +27,9 @@ class MapView: UIView {
         
         mapView.setRegion(region, animated: true)
     }
+    
+    func pinVenuesOnMap(venues: RealmVenues) {
+        
+    }
 
 }

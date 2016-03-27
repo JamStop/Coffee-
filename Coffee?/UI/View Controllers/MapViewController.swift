@@ -21,6 +21,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
 
         setupLocationManager()
+        delegateSetups()
     }
     
     // MARK: - Alert Presentations
@@ -64,8 +65,9 @@ class MapViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization()
     }
     
-    private func setupMapView() {
+    private func delegateSetups() {
         mainView.mapView.delegate = self
+        viewModel.delegate = self
     }
 
 }
@@ -107,5 +109,12 @@ extension MapViewController: MKMapViewDelegate {
         guard let location = userLocation.location else { fatalError("Could not parse user location") }
         viewModel.location = location
         
+    }
+}
+
+// MARK: - MapViewModelDelegate
+extension MapViewController: MapViewModelDelegate {
+    func mapViewModel(didFinishLoadingNearbyVenues nearbyVenues: RealmVenues) {
+        print(nearbyVenues)
     }
 }

@@ -11,7 +11,7 @@ import RxSwift
 import CoreLocation
 
 protocol MapViewModelDelegate: class {
-    func MapViewModel(didFinishLoadingNearbyVenues nearbyVenues: [JSONVenue])
+    func mapViewModel(didFinishLoadingNearbyVenues nearbyVenues: RealmVenues)
 }
 
 class MapViewModel {
@@ -22,14 +22,15 @@ class MapViewModel {
     let FSApi = FoursquareAPI()
     let disposeBag = DisposeBag()
     weak var delegate: MapViewModelDelegate!
+    let realmHelper = RealmHelper()
     
     // MARK: - Models
-    var nearbyVenues: [JSONVenue]!
+    var nearbyVenues: RealmVenues!
     
     var location: CLLocation! {
         didSet {
             if nearbyVenues != nil { return }
-            nearbyVenues = []
+            nearbyVenues = RealmVenues()
             FSApi.rx_getNearbyVenues(location).subscribe (
                 onNext: { (items) -> Void in
                     self.parseResponseItems(items)
@@ -49,9 +50,8 @@ class MapViewModel {
     
     // MARK: - Model Loading
     private func parseResponseItems(items: [JSON]) {
-        let venues = items.map { item in JSONVenue(json: item["venue"] as! JSON)! }
-        nearbyVenues = venues
-        delegate.MapViewModel(didFinishLoadingNearbyVenues: venues)
+        nearbyVenues = realmHelper.setNearbyVenuesWithJSONItems(items)
+        delegate.mapViewModel(didFinishLoadingNearbyVenues: nearbyVenues)
     }
 
     

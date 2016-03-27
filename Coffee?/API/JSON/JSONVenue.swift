@@ -23,7 +23,7 @@ struct JSONVenue: Decodable {
     let contact: JSONContact?
     let verified: Bool?
     let url: String?
-    let rating: Float?
+    let rating: Double?
     
     init?(json: JSON) {
         self.id = "id" <~~ json
