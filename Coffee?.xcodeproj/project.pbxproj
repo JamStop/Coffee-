@@ -13,6 +13,7 @@
 		BF1F19EF1CA88A7A00EC844E /* RealmVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19EE1CA88A7A00EC844E /* RealmVenue.swift */; };
 		BF1F19F11CA88A8B00EC844E /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19F01CA88A8B00EC844E /* RealmHelper.swift */; };
 		BF1F19F31CA88A9300EC844E /* RealmVenues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19F21CA88A9300EC844E /* RealmVenues.swift */; };
+		BF1F19F51CA8C57600EC844E /* VenuePointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19F41CA8C57600EC844E /* VenuePointAnnotation.swift */; };
 		BF6DD8B8C93F114A795F6CD5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36E953CF3CE6473E0A9094D /* Pods.framework */; };
 		BFC402C11C9DE8FC00CD159F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */; };
 		BFC402C21C9DE8FC00CD159F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */; };
@@ -37,6 +38,7 @@
 		BF1F19EE1CA88A7A00EC844E /* RealmVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVenue.swift; sourceTree = "<group>"; };
 		BF1F19F01CA88A8B00EC844E /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		BF1F19F21CA88A9300EC844E /* RealmVenues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVenues.swift; sourceTree = "<group>"; };
+		BF1F19F41CA8C57600EC844E /* VenuePointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuePointAnnotation.swift; sourceTree = "<group>"; };
 		BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		BFC402B91C9DE12A00CD159F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F19F41CA8C57600EC844E /* VenuePointAnnotation.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1F19EB1CA8829400EC844E /* JSONLocation.swift in Sources */,
+				BF1F19F51CA8C57600EC844E /* VenuePointAnnotation.swift in Sources */,
 				BF1F19F11CA88A8B00EC844E /* RealmHelper.swift in Sources */,
 				BFFD86F61C9DDD4600AABCDF /* AppDelegate.swift in Sources */,
 				BF1F19ED1CA883EB00EC844E /* JSONContact.swift in Sources */,

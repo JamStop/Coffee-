@@ -29,7 +29,16 @@ class MapView: UIView {
     }
     
     func pinVenuesOnMap(venues: RealmVenues) {
-        
+        venues.venues.forEach { venue in
+            let coordinate = CLLocationCoordinate2D(latitude: venue.lat, longitude: venue.lng)
+            let point = VenuePointAnnotation()
+            point.coordinate = coordinate
+            point.title = venue.name + ", Rating: " + String(venue.rating)
+            point.subtitle = venue.address
+            point.venue = venue
+            
+            self.mapView.addAnnotation(point)
+        }
     }
 
 }

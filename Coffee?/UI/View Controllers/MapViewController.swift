@@ -63,6 +63,7 @@ class MapViewController: UIViewController {
             showNoPermissionsAlert()
         }
         locationManager.requestWhenInUseAuthorization()
+        mainView.mapView.showsUserLocation = true
     }
     
     private func delegateSetups() {
@@ -110,11 +111,23 @@ extension MapViewController: MKMapViewDelegate {
         viewModel.location = location
         
     }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let venueAnnotation = annotation as? VenuePointAnnotation else { return MKAnnotationView() }
+        
+        let annotationView = MKPinAnnotationView(annotation: venueAnnotation, reuseIdentifier: venueAnnotation.venue.id)
+        let detailButton = UIButton(type: UIButtonType.DetailDisclosure)
+        
+        annotationView.canShowCallout = true
+        annotationView.rightCalloutAccessoryView = detailButton
+        
+        return annotationView
+    }
 }
 
 // MARK: - MapViewModelDelegate
 extension MapViewController: MapViewModelDelegate {
     func mapViewModel(didFinishLoadingNearbyVenues nearbyVenues: RealmVenues) {
-        print(nearbyVenues)
+        mainView.pinVenuesOnMap(nearbyVenues)
     }
 }
