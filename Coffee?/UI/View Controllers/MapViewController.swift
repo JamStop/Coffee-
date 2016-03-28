@@ -113,15 +113,36 @@ extension MapViewController: MKMapViewDelegate {
     }
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-        guard let venueAnnotation = annotation as? VenuePointAnnotation else { return MKAnnotationView() }
+        if annotation is MKUserLocation {
+            return nil
+        }
+        guard let venueAnnotation = annotation as? VenuePointAnnotation else { return nil }
+        let venue = venueAnnotation.venue
         
-        let annotationView = MKPinAnnotationView(annotation: venueAnnotation, reuseIdentifier: venueAnnotation.venue.id)
+        let annotationView = MKPinAnnotationView(annotation: venueAnnotation, reuseIdentifier: venue.id)
         let detailButton = UIButton(type: UIButtonType.DetailDisclosure)
         
         annotationView.canShowCallout = true
         annotationView.rightCalloutAccessoryView = detailButton
+//        annotationView.pinTintColor = UIColor(rgba: "#" + venue.ratingColor)
         
         return annotationView
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let annotation = view.annotation as? VenuePointAnnotation else { return }
+        let venue = annotation.venue
+        
+        let vc = UIViewController()
+        vc.view = VenueView(frame: vc.view.frame, venue: venue)
+        vc.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(MapViewController.dismissVenueVC)))
+        
+        self.presentViewController(vc, animated: true, completion: nil)
+        
+    }
+    
+    func dismissVenueVC(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

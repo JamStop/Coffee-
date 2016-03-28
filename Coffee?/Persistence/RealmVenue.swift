@@ -19,4 +19,5 @@ class RealmVenue: Object {
     dynamic var verified = false
     dynamic var url = ""
     dynamic var rating = 0.0
+    dynamic var ratingColor = ""
 }

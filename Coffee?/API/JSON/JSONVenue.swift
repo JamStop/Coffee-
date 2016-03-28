@@ -24,6 +24,7 @@ struct JSONVenue: Decodable {
     let verified: Bool?
     let url: String?
     let rating: Double?
+    let ratingColor: String?
     
     init?(json: JSON) {
         self.id = "id" <~~ json
@@ -33,6 +34,7 @@ struct JSONVenue: Decodable {
         self.verified = "verified" <~~ json
         self.url = "url" <~~ json
         self.rating = "rating" <~~ json
+        self.ratingColor = "ratingColor" <~~ json
     }
     
     func toJSON() -> JSON? {
@@ -43,7 +45,8 @@ struct JSONVenue: Decodable {
             "contact" ~~> self.contact,
             "verified" ~~> self.verified,
             "url" ~~> self.url,
-            "rating" ~~> self.rating
+            "rating" ~~> self.rating,
+            "ratingColor" ~~> self.ratingColor
             ])
     }
 }

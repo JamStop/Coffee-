@@ -52,6 +52,7 @@ class RealmHelper {
             newVenue.verified = venueJson.verified!
 //            newVenue.url = venueJson.url!
             newVenue.rating = venueJson.rating!
+            newVenue.ratingColor = venueJson.ratingColor ?? "000000"
             
             venues.venues.append(newVenue)
         }
