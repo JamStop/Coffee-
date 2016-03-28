@@ -125,6 +125,15 @@ extension MapViewController: MKMapViewDelegate {
         annotationView.canShowCallout = true
         annotationView.rightCalloutAccessoryView = detailButton
 //        annotationView.pinTintColor = UIColor(rgba: "#" + venue.ratingColor)
+        annotationView.animatesDrop = true
+        
+        let rating = venue.rating
+        if rating >= 9.0 {
+            annotationView.pinTintColor = UIColor.greenColor()
+        }
+        else if rating >= 8.0 {
+            annotationView.pinTintColor = UIColor.yellowColor()
+        }
         
         return annotationView
     }
