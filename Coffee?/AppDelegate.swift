@@ -37,6 +37,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = vc
             self.window?.makeKeyAndVisible()
         }
+        
+        // Realm Migration Block
+//        Realm.Configuration.defaultConfiguration = Realm.Configuration(
+//            schemaVersion: 0,
+//            migrationBlock: { migration, oldSchemaVersion in
+//                if (oldSchemaVersion < 0) {
+//                    // The enumerate(_:_:) method iterates
+//                    // over every Person object stored in the Realm file
+//                    migration.enumerate(Person.className()) { oldObject, newObject in
+//                        // combine name fields into a single field
+//                        let firstName = oldObject!["firstName"] as! String
+//                        let lastName = oldObject!["lastName"] as! String
+//                        newObject!["fullName"] = "\(firstName) \(lastName)"
+//                    }
+//                }
+//        })
     
         return true
     }
