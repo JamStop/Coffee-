@@ -9,15 +9,23 @@
 import Foundation
 import UIKit
 
+/**
+ We put a little bit more business logic in this view in order to avoid cluttering of the file system. The only extra bit that this view contains is the check in system.
+ */
 class VenueView: UIView {
     
     // MARK: - Outlets
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var checkInButton: UIButton!
+    @IBAction func checkInButtonTapped(sender: UIButton) {
+        viewModel.checkInUser()
+    }
     
     // MARK: - Properties
     var view: UIView!
+    var viewModel = VenueViewModel()
     
     init(frame: CGRect, venue: RealmVenue) {
         super.init(frame: frame)
@@ -44,9 +52,10 @@ class VenueView: UIView {
         return view
     }
     
-    private func setupVenue(venue: RealmVenue) {
+    func setupVenue(venue: RealmVenue) {
         addressLabel.text = venue.address
         ratingLabel.text = "Rating: " + String(venue.rating)
         tipLabel.text = venue.tip
+        viewModel.venue = venue
     }
 }

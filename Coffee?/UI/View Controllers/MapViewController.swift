@@ -16,6 +16,7 @@ class MapViewController: UIViewController {
     let viewModel = MapViewModel()
     let locationManager = CLLocationManager()
     @IBOutlet weak var mainView: MapView!
+    let api = FirebaseAPI()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -148,10 +149,6 @@ extension MapViewController: MKMapViewDelegate {
         
         self.navigationController!.pushViewController(vc, animated: true)
         
-    }
-    
-    func dismissVenueVC(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

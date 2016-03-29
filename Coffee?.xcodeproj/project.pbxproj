@@ -29,6 +29,7 @@
 		BFB7E4701CAA0CD500966040 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E46F1CAA0CD500966040 /* RealmUser.swift */; };
 		BFB7E4771CAAFB0B00966040 /* JSONTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4761CAAFB0B00966040 /* JSONTip.swift */; };
 		BFB7E47A1CAB013300966040 /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4791CAB013300966040 /* FirebaseAPI.swift */; };
+		BFB7E47E1CAB084400966040 /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E47D1CAB084400966040 /* VenueViewModel.swift */; };
 		BFC402C11C9DE8FC00CD159F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */; };
 		BFC402C21C9DE8FC00CD159F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */; };
 		BFC402C31C9DE8FC00CD159F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */; };
@@ -67,6 +68,7 @@
 		BFB7E46F1CAA0CD500966040 /* RealmUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
 		BFB7E4761CAAFB0B00966040 /* JSONTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTip.swift; sourceTree = "<group>"; };
 		BFB7E4791CAB013300966040 /* FirebaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
+		BFB7E47D1CAB084400966040 /* VenueViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
 		BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				BFC402CD1C9F4F7D00CD159F /* MapViewModel.swift */,
+				BFB7E47D1CAB084400966040 /* VenueViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				BFB7E46C1CAA0A3600966040 /* LoadingHUD.swift in Sources */,
 				BF1F19F91CA9003A00EC844E /* VenueView.swift in Sources */,
 				BFB7E46E1CAA0AB900966040 /* FirebaseLoginHelper.swift in Sources */,
+				BFB7E47E1CAB084400966040 /* VenueViewModel.swift in Sources */,
 				BFB7E47A1CAB013300966040 /* FirebaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VenueView" customModule="Coffee_" customModuleProvider="target">
             <connections>
                 <outlet property="addressLabel" destination="r1p-or-Hvq" id="pEv-td-7MF"/>
+                <outlet property="checkInButton" destination="hTM-Pr-Yda" id="0Zg-QB-S2r"/>
                 <outlet property="ratingLabel" destination="lhm-TW-sk5" id="nqE-y3-F7h"/>
                 <outlet property="tipLabel" destination="yEr-Yu-1vp" id="Yr6-ds-wzh"/>
             </connections>
@@ -42,6 +43,9 @@
                     <state key="normal" title="Check In">
                         <color key="titleColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="checkInButtonTapped:" destination="-1" eventType="touchUpInside" id="IZE-AJ-nfx"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
