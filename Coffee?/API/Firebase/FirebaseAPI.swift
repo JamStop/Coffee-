@@ -40,7 +40,7 @@ struct FirebaseAPI {
             "rating": venue.rating,
             "date": String(NSDate().formatted)
         ]
-        ref.childByAppendingPath("users").childByAppendingPath(userID).childByAppendingPath("venues").childByAppendingPath(venue.id).updateChildValues(newVenue as [NSObject : AnyObject])
+        ref.childByAppendingPath("users").childByAppendingPath(userID).childByAppendingPath("venues").childByAutoId().updateChildValues(newVenue as [NSObject : AnyObject])
     }
     
     /**

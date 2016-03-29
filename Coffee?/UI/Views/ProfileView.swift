@@ -16,6 +16,7 @@ class ProfileView: UIView {
     
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!

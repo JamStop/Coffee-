@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileView">
             <connections>
+                <outlet property="cancelButton" destination="W6e-Qm-fKc" id="DRh-Hh-8uB"/>
                 <outlet property="tableView" destination="5pe-Cp-tm9" id="8vH-Pz-OP9"/>
             </connections>
         </placeholder>
@@ -22,7 +23,11 @@
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlM-ng-NQj">
                     <rect key="frame" x="0.0" y="22" width="375" height="44"/>
                     <items>
-                        <navigationItem title="My Check Ins" id="hzP-X0-Dyl"/>
+                        <navigationItem title="My Check Ins" id="hzP-X0-Dyl">
+                            <barButtonItem key="rightBarButtonItem" image="Cancel" id="W6e-Qm-fKc">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </navigationItem>
                     </items>
                 </navigationBar>
             </subviews>
@@ -41,4 +46,7 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
+    <resources>
+        <image name="Cancel" width="20" height="20"/>
+    </resources>
 </document>

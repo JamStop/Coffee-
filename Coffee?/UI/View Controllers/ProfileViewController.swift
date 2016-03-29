@@ -19,6 +19,7 @@ class ProfileViewController: UIViewController {
         
         mainView.tableView.delegate = self
         mainView.tableView.dataSource = self
+        mainView.cancelButton.action = #selector(ProfileViewController.dismissSelf)
         
         LoadingHUD.sharedHUD.showInView(mainView)
         mainView.tableView.hidden = true
@@ -30,6 +31,11 @@ class ProfileViewController: UIViewController {
             self.mainView.tableView.reloadData()
         }
     }
+    
+    func dismissSelf(sender:AnyObject) {
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+
 
 }
 

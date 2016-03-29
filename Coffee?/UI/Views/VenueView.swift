@@ -20,6 +20,8 @@ class VenueView: UIView {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var checkInButton: UIButton!
     @IBAction func checkInButtonTapped(sender: UIButton) {
+        checkInButton.enabled = false
+        checkInButton.alpha = 0.25
         viewModel.checkInUser()
     }
     
