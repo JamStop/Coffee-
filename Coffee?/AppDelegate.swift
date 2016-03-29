@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import QuadratTouch
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Foursquare Setup
         setupFoursquareSession()
+        
+        // Check Current User
+        let realm = try! Realm()
+        let currentUser = realm.objects(RealmCurrentUser)
+        
+        if currentUser.count > 0 {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+            let vc = mainStoryboard.instantiateInitialViewController()
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+        }
     
         return true
     }
