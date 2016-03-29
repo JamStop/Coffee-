@@ -29,7 +29,7 @@ class LoadingHUD: UIView {
     
     init() {
         //Initialising Code
-        backGroundColor = UIColor.clearColor()
+        backGroundColor = UIColor.whiteColor()
         loaderColor = UIColor(red: 1, green: 128/255, blue: 128/255, alpha: 1.0)
         super.init(frame: CGRectZero)
     }

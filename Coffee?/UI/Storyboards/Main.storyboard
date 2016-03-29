@@ -9,7 +9,7 @@
         <!--Navigation Controller-->
         <scene sceneID="pKZ-97-SEj">
             <objects>
-                <navigationController id="gxS-pH-gLk" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mapNavigation" id="gxS-pH-gLk" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hIz-Rw-Af7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
