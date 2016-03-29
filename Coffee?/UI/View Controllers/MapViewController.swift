@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import MapKit
+import RealmSwift
 
 class MapViewController: UIViewController {
     
@@ -28,6 +29,18 @@ class MapViewController: UIViewController {
     
     @IBAction func profileButtonTapped(sender: AnyObject) {
         self.performSegueWithIdentifier("viewProfile", sender: sender)
+    }
+    
+    @IBAction func signOut(sender: AnyObject) {
+        // Wipe the current user
+        let realm = try! Realm()
+        try! realm.write {
+            realm.deleteAll()
+        }
+        
+        // Login screen
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        delegate.escapeToLogin()
     }
     
     // MARK: - Alert Presentations
@@ -92,13 +105,6 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         showErrorAlert(error)
     }
-    
-//    func locationManager(manager: CLLocationManager,
-//        didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
-//            self.locationManager.stopUpdatingLocation()
-//            viewModel.location = newLocation
-//            mainView.goToLocation(newLocation)
-//    }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }

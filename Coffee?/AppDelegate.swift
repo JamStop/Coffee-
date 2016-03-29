@@ -108,6 +108,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Session.setupSharedSessionWithConfiguration(configuration)
         
     }
+    
+    func escapeToLogin() {
+        let appDomain = NSBundle.mainBundle().bundleIdentifier
+        NSUserDefaults.standardUserDefaults().removePersistentDomainForName(appDomain!)
+        
+        let mainStoryboard = UIStoryboard(name: "Login", bundle: NSBundle.mainBundle())
+        let vc = mainStoryboard.instantiateInitialViewController()
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+    }
 
 
 }
