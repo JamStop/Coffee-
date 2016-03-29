@@ -85,6 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/Firebase.framework"
   install_framework "Pods/Gloss.framework"
   install_framework "Pods/Kingfisher.framework"
   install_framework "Pods/QuadratTouch.framework"
@@ -96,6 +97,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/Firebase.framework"
   install_framework "Pods/Gloss.framework"
   install_framework "Pods/Kingfisher.framework"
   install_framework "Pods/QuadratTouch.framework"

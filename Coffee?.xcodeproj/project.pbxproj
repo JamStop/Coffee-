@@ -7,7 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1F19E91CA8825300EC844E /* JSONVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19E81CA8825300EC844E /* JSONVenue.swift */; };
+		BF1F19EB1CA8829400EC844E /* JSONLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19EA1CA8829400EC844E /* JSONLocation.swift */; };
+		BF1F19ED1CA883EB00EC844E /* JSONContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19EC1CA883EB00EC844E /* JSONContact.swift */; };
+		BF1F19EF1CA88A7A00EC844E /* RealmVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19EE1CA88A7A00EC844E /* RealmVenue.swift */; };
+		BF1F19F11CA88A8B00EC844E /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19F01CA88A8B00EC844E /* RealmHelper.swift */; };
+		BF1F19F31CA88A9300EC844E /* RealmVenues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19F21CA88A9300EC844E /* RealmVenues.swift */; };
+		BF1F19F51CA8C57600EC844E /* VenuePointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19F41CA8C57600EC844E /* VenuePointAnnotation.swift */; };
+		BF1F19F91CA9003A00EC844E /* VenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19F81CA9003A00EC844E /* VenueView.swift */; };
+		BF1F19FB1CA9004700EC844E /* VenueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1F19FA1CA9004700EC844E /* VenueView.xib */; };
+		BF1F19FF1CA90A3800EC844E /* UIColorWithHexValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19FE1CA90A3800EC844E /* UIColorWithHexValue.swift */; };
 		BF6DD8B8C93F114A795F6CD5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36E953CF3CE6473E0A9094D /* Pods.framework */; };
+		BFB7E4601CA9E32A00966040 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E45F1CA9E32A00966040 /* LoginViewController.swift */; };
+		BFB7E4621CA9E45300966040 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB7E4611CA9E45300966040 /* Login.storyboard */; };
+		BFB7E4641CA9E84800966040 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB7E4631CA9E84800966040 /* LoginView.xib */; };
+		BFB7E4661CA9E85900966040 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4651CA9E85900966040 /* LoginView.swift */; };
+		BFB7E4691CAA046200966040 /* LoginWithFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4671CAA046200966040 /* LoginWithFacebook.swift */; };
+		BFB7E46A1CAA046200966040 /* LoginWithFacebook.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB7E4681CAA046200966040 /* LoginWithFacebook.xib */; };
+		BFB7E46C1CAA0A3600966040 /* LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E46B1CAA0A3600966040 /* LoadingHUD.swift */; };
+		BFB7E46E1CAA0AB900966040 /* FirebaseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E46D1CAA0AB900966040 /* FirebaseLoginHelper.swift */; };
+		BFB7E4701CAA0CD500966040 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E46F1CAA0CD500966040 /* RealmUser.swift */; };
+		BFB7E4771CAAFB0B00966040 /* JSONTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4761CAAFB0B00966040 /* JSONTip.swift */; };
+		BFB7E47A1CAB013300966040 /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4791CAB013300966040 /* FirebaseAPI.swift */; };
+		BFB7E47E1CAB084400966040 /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E47D1CAB084400966040 /* VenueViewModel.swift */; };
+		BFB7E4801CAB123E00966040 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB7E47F1CAB123E00966040 /* Profile.storyboard */; };
+		BFB7E4821CAB127500966040 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4811CAB127500966040 /* ProfileViewController.swift */; };
+		BFB7E4841CAB128000966040 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4831CAB128000966040 /* ProfileViewModel.swift */; };
+		BFB7E4861CAB128C00966040 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4851CAB128C00966040 /* ProfileView.swift */; };
+		BFB7E4881CAB129600966040 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB7E4871CAB129600966040 /* ProfileView.xib */; };
+		BFB7E48E1CAB204300966040 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E48D1CAB204300966040 /* VenueTableViewCell.swift */; };
+		BFB7E4901CAB204F00966040 /* VenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB7E48F1CAB204F00966040 /* VenueTableViewCell.xib */; };
+		BFB7E4921CAB2D2F00966040 /* NSDateFormatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4911CAB2D2F00966040 /* NSDateFormatted.swift */; };
+		BFC402C11C9DE8FC00CD159F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */; };
+		BFC402C21C9DE8FC00CD159F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */; };
+		BFC402C31C9DE8FC00CD159F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */; };
+		BFC402C51C9DEB4000CD159F /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFC402C41C9DEB4000CD159F /* Config.plist */; };
+		BFC402C81C9F4F2500CD159F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC402C71C9F4F2500CD159F /* Main.storyboard */; };
+		BFC402CA1C9F4F4500CD159F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC402C91C9F4F4500CD159F /* MapViewController.swift */; };
+		BFC402CC1C9F4F6900CD159F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC402CB1C9F4F6900CD159F /* MapView.swift */; };
+		BFC402CE1C9F4F7D00CD159F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC402CD1C9F4F7D00CD159F /* MapViewModel.swift */; };
+		BFC402D01C9F4F8C00CD159F /* FoursquareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC402CF1C9F4F8C00CD159F /* FoursquareAPI.swift */; };
 		BFFD86F61C9DDD4600AABCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD86F51C9DDD4600AABCDF /* AppDelegate.swift */; };
 		BFFD86FD1C9DDD4600AABCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFD86FC1C9DDD4600AABCDF /* Assets.xcassets */; };
 		BFFD87001C9DDD4600AABCDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFD86FE1C9DDD4600AABCDF /* LaunchScreen.storyboard */; };
@@ -16,6 +55,45 @@
 /* Begin PBXFileReference section */
 		2C3A677699C1750318C80BF3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4A66A8452147826A67298ACD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BF1F19E81CA8825300EC844E /* JSONVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONVenue.swift; sourceTree = "<group>"; };
+		BF1F19EA1CA8829400EC844E /* JSONLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLocation.swift; sourceTree = "<group>"; };
+		BF1F19EC1CA883EB00EC844E /* JSONContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONContact.swift; sourceTree = "<group>"; };
+		BF1F19EE1CA88A7A00EC844E /* RealmVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVenue.swift; sourceTree = "<group>"; };
+		BF1F19F01CA88A8B00EC844E /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		BF1F19F21CA88A9300EC844E /* RealmVenues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVenues.swift; sourceTree = "<group>"; };
+		BF1F19F41CA8C57600EC844E /* VenuePointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuePointAnnotation.swift; sourceTree = "<group>"; };
+		BF1F19F81CA9003A00EC844E /* VenueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueView.swift; sourceTree = "<group>"; };
+		BF1F19FA1CA9004700EC844E /* VenueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueView.xib; sourceTree = "<group>"; };
+		BF1F19FE1CA90A3800EC844E /* UIColorWithHexValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorWithHexValue.swift; sourceTree = "<group>"; };
+		BFB7E45F1CA9E32A00966040 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BFB7E4611CA9E45300966040 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BFB7E4631CA9E84800966040 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		BFB7E4651CA9E85900966040 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BFB7E4671CAA046200966040 /* LoginWithFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithFacebook.swift; sourceTree = "<group>"; };
+		BFB7E4681CAA046200966040 /* LoginWithFacebook.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWithFacebook.xib; sourceTree = "<group>"; };
+		BFB7E46B1CAA0A3600966040 /* LoadingHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingHUD.swift; sourceTree = "<group>"; };
+		BFB7E46D1CAA0AB900966040 /* FirebaseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseLoginHelper.swift; sourceTree = "<group>"; };
+		BFB7E46F1CAA0CD500966040 /* RealmUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
+		BFB7E4761CAAFB0B00966040 /* JSONTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTip.swift; sourceTree = "<group>"; };
+		BFB7E4791CAB013300966040 /* FirebaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
+		BFB7E47D1CAB084400966040 /* VenueViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
+		BFB7E47F1CAB123E00966040 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		BFB7E4811CAB127500966040 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BFB7E4831CAB128000966040 /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		BFB7E4851CAB128C00966040 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BFB7E4871CAB129600966040 /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		BFB7E48D1CAB204300966040 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		BFB7E48F1CAB204F00966040 /* VenueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueTableViewCell.xib; sourceTree = "<group>"; };
+		BFB7E4911CAB2D2F00966040 /* NSDateFormatted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateFormatted.swift; sourceTree = "<group>"; };
+		BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		BFC402C41C9DEB4000CD159F /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		BFC402C71C9F4F2500CD159F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BFC402C91C9F4F4500CD159F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BFC402CB1C9F4F6900CD159F /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BFC402CD1C9F4F7D00CD159F /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		BFC402CF1C9F4F8C00CD159F /* FoursquareAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAPI.swift; sourceTree = "<group>"; };
 		BFFD86F21C9DDD4600AABCDF /* Coffee?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFD86F51C9DDD4600AABCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFFD86FC1C9DDD4600AABCDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,7 +107,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC402C31C9DE8FC00CD159F /* FBSDKShareKit.framework in Frameworks */,
 				BF6DD8B8C93F114A795F6CD5 /* Pods.framework in Frameworks */,
+				BFC402C11C9DE8FC00CD159F /* FBSDKCoreKit.framework in Frameworks */,
+				BFC402C21C9DE8FC00CD159F /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,9 +126,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BFB7E4781CAB012900966040 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				BFB7E4791CAB013300966040 /* FirebaseAPI.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		BFC402B01C9DE12A00CD159F /* API */ = {
 			isa = PBXGroup;
 			children = (
+				BFB7E4781CAB012900966040 /* Firebase */,
 				BFC402B11C9DE12A00CD159F /* Facebook */,
 				BFC402B21C9DE12A00CD159F /* Foursquare */,
 				BFC402B31C9DE12A00CD159F /* JSON */,
@@ -58,6 +148,7 @@
 		BFC402B11C9DE12A00CD159F /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				BFB7E46D1CAA0AB900966040 /* FirebaseLoginHelper.swift */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -65,6 +156,7 @@
 		BFC402B21C9DE12A00CD159F /* Foursquare */ = {
 			isa = PBXGroup;
 			children = (
+				BFC402CF1C9F4F8C00CD159F /* FoursquareAPI.swift */,
 			);
 			path = Foursquare;
 			sourceTree = "<group>";
@@ -72,6 +164,10 @@
 		BFC402B31C9DE12A00CD159F /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F19E81CA8825300EC844E /* JSONVenue.swift */,
+				BF1F19EA1CA8829400EC844E /* JSONLocation.swift */,
+				BF1F19EC1CA883EB00EC844E /* JSONContact.swift */,
+				BFB7E4761CAAFB0B00966040 /* JSONTip.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -79,6 +175,8 @@
 		BFC402B41C9DE12A00CD159F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F19FE1CA90A3800EC844E /* UIColorWithHexValue.swift */,
+				BFB7E4911CAB2D2F00966040 /* NSDateFormatted.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -86,6 +184,10 @@
 		BFC402B51C9DE12A00CD159F /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F19EE1CA88A7A00EC844E /* RealmVenue.swift */,
+				BF1F19F01CA88A8B00EC844E /* RealmHelper.swift */,
+				BF1F19F21CA88A9300EC844E /* RealmVenues.swift */,
+				BFB7E46F1CAA0CD500966040 /* RealmUser.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -120,6 +222,8 @@
 		BFC402B91C9DE12A00CD159F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BF1F19F41CA8C57600EC844E /* VenuePointAnnotation.swift */,
+				BFB7E46B1CAA0A3600966040 /* LoadingHUD.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -127,6 +231,9 @@
 		BFC402BA1C9DE12A00CD159F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				BFC402C71C9F4F2500CD159F /* Main.storyboard */,
+				BFB7E4611CA9E45300966040 /* Login.storyboard */,
+				BFB7E47F1CAB123E00966040 /* Profile.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -134,6 +241,9 @@
 		BFC402BB1C9DE12A00CD159F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFC402C91C9F4F4500CD159F /* MapViewController.swift */,
+				BFB7E45F1CA9E32A00966040 /* LoginViewController.swift */,
+				BFB7E4811CAB127500966040 /* ProfileViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -141,6 +251,9 @@
 		BFC402BC1C9DE12A00CD159F /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				BFC402CD1C9F4F7D00CD159F /* MapViewModel.swift */,
+				BFB7E47D1CAB084400966040 /* VenueViewModel.swift */,
+				BFB7E4831CAB128000966040 /* ProfileViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -148,6 +261,17 @@
 		BFC402BD1C9DE12A00CD159F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BFB7E4671CAA046200966040 /* LoginWithFacebook.swift */,
+				BFB7E4681CAA046200966040 /* LoginWithFacebook.xib */,
+				BFC402CB1C9F4F6900CD159F /* MapView.swift */,
+				BF1F19F81CA9003A00EC844E /* VenueView.swift */,
+				BF1F19FA1CA9004700EC844E /* VenueView.xib */,
+				BFB7E4651CA9E85900966040 /* LoginView.swift */,
+				BFB7E4631CA9E84800966040 /* LoginView.xib */,
+				BFB7E4851CAB128C00966040 /* ProfileView.swift */,
+				BFB7E4871CAB129600966040 /* ProfileView.xib */,
+				BFB7E48D1CAB204300966040 /* VenueTableViewCell.swift */,
+				BFB7E48F1CAB204F00966040 /* VenueTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +306,7 @@
 				BFFD86FC1C9DDD4600AABCDF /* Assets.xcassets */,
 				BFFD86FE1C9DDD4600AABCDF /* LaunchScreen.storyboard */,
 				BFFD87011C9DDD4600AABCDF /* Info.plist */,
+				BFC402C41C9DEB4000CD159F /* Config.plist */,
 			);
 			path = "Coffee?";
 			sourceTree = "<group>";
@@ -189,6 +314,9 @@
 		C3ABFA5F555563E0DB7A195C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */,
+				BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */,
+				BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */,
 				D36E953CF3CE6473E0A9094D /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -256,7 +384,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFD87001C9DDD4600AABCDF /* LaunchScreen.storyboard in Resources */,
+				BFC402C51C9DEB4000CD159F /* Config.plist in Resources */,
+				BFB7E4901CAB204F00966040 /* VenueTableViewCell.xib in Resources */,
+				BFB7E4621CA9E45300966040 /* Login.storyboard in Resources */,
+				BFB7E4641CA9E84800966040 /* LoginView.xib in Resources */,
 				BFFD86FD1C9DDD4600AABCDF /* Assets.xcassets in Resources */,
+				BFB7E46A1CAA046200966040 /* LoginWithFacebook.xib in Resources */,
+				BFB7E4881CAB129600966040 /* ProfileView.xib in Resources */,
+				BFB7E4801CAB123E00966040 /* Profile.storyboard in Resources */,
+				BFC402C81C9F4F2500CD159F /* Main.storyboard in Resources */,
+				BF1F19FB1CA9004700EC844E /* VenueView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +452,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1F19EB1CA8829400EC844E /* JSONLocation.swift in Sources */,
+				BF1F19F51CA8C57600EC844E /* VenuePointAnnotation.swift in Sources */,
+				BFB7E4701CAA0CD500966040 /* RealmUser.swift in Sources */,
+				BF1F19F11CA88A8B00EC844E /* RealmHelper.swift in Sources */,
+				BFB7E4601CA9E32A00966040 /* LoginViewController.swift in Sources */,
+				BF1F19FF1CA90A3800EC844E /* UIColorWithHexValue.swift in Sources */,
+				BFB7E4821CAB127500966040 /* ProfileViewController.swift in Sources */,
+				BFB7E4691CAA046200966040 /* LoginWithFacebook.swift in Sources */,
 				BFFD86F61C9DDD4600AABCDF /* AppDelegate.swift in Sources */,
+				BFB7E4921CAB2D2F00966040 /* NSDateFormatted.swift in Sources */,
+				BF1F19ED1CA883EB00EC844E /* JSONContact.swift in Sources */,
+				BFC402D01C9F4F8C00CD159F /* FoursquareAPI.swift in Sources */,
+				BFC402CC1C9F4F6900CD159F /* MapView.swift in Sources */,
+				BF1F19E91CA8825300EC844E /* JSONVenue.swift in Sources */,
+				BFC402CA1C9F4F4500CD159F /* MapViewController.swift in Sources */,
+				BFB7E4861CAB128C00966040 /* ProfileView.swift in Sources */,
+				BFB7E4841CAB128000966040 /* ProfileViewModel.swift in Sources */,
+				BFB7E4771CAAFB0B00966040 /* JSONTip.swift in Sources */,
+				BF1F19EF1CA88A7A00EC844E /* RealmVenue.swift in Sources */,
+				BF1F19F31CA88A9300EC844E /* RealmVenues.swift in Sources */,
+				BFC402CE1C9F4F7D00CD159F /* MapViewModel.swift in Sources */,
+				BFB7E4661CA9E85900966040 /* LoginView.swift in Sources */,
+				BFB7E48E1CAB204300966040 /* VenueTableViewCell.swift in Sources */,
+				BFB7E46C1CAA0A3600966040 /* LoadingHUD.swift in Sources */,
+				BF1F19F91CA9003A00EC844E /* VenueView.swift in Sources */,
+				BFB7E46E1CAA0AB900966040 /* FirebaseLoginHelper.swift in Sources */,
+				BFB7E47E1CAB084400966040 /* VenueViewModel.swift in Sources */,
+				BFB7E47A1CAB013300966040 /* FirebaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +583,10 @@
 			baseConfigurationReference = 4A66A8452147826A67298ACD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Coffee?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JY.Coffee-";
@@ -431,6 +599,10 @@
 			baseConfigurationReference = 2C3A677699C1750318C80BF3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Coffee?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JY.Coffee-";

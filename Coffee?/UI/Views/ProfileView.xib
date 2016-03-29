@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileView">
+            <connections>
+                <outlet property="cancelButton" destination="W6e-Qm-fKc" id="DRh-Hh-8uB"/>
+                <outlet property="tableView" destination="5pe-Cp-tm9" id="8vH-Pz-OP9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5pe-Cp-tm9">
+                    <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlM-ng-NQj">
+                    <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="My Check Ins" id="hzP-X0-Dyl">
+                            <barButtonItem key="rightBarButtonItem" image="Cancel" id="W6e-Qm-fKc">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="5pe-Cp-tm9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Bs-TM-sBh"/>
+                <constraint firstItem="5pe-Cp-tm9" firstAttribute="top" secondItem="GlM-ng-NQj" secondAttribute="bottom" id="DyF-Wo-qRV"/>
+                <constraint firstAttribute="trailing" secondItem="5pe-Cp-tm9" secondAttribute="trailing" id="Gz0-HK-9nA"/>
+                <constraint firstAttribute="trailing" secondItem="GlM-ng-NQj" secondAttribute="trailing" id="QYl-gg-4h6"/>
+                <constraint firstItem="GlM-ng-NQj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="Rbj-aU-umf"/>
+                <constraint firstItem="GlM-ng-NQj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Suq-1n-3oR"/>
+                <constraint firstAttribute="bottom" secondItem="5pe-Cp-tm9" secondAttribute="bottom" id="cWo-4G-zjw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cancel" width="20" height="20"/>
+    </resources>
+</document>

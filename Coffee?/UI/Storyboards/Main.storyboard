@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gxS-pH-gLk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="pKZ-97-SEj">
+            <objects>
+                <navigationController storyboardIdentifier="mapNavigation" id="gxS-pH-gLk" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hIz-Rw-Af7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3Xa-g6-LSJ" kind="relationship" relationship="rootViewController" id="P3y-eo-kc3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woe-XE-XLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-254.5" y="344.5"/>
+        </scene>
+        <!--Cafes-->
+        <scene sceneID="O0E-Ae-tkv">
+            <objects>
+                <viewController id="3Xa-g6-LSJ" customClass="MapViewController" customModule="Coffee_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FNx-hW-4cH"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Xh-MK-tzB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PbH-VC-dcs" customClass="MapView" customModule="Coffee_" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-SW-fPa">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BNT-SW-fPa" secondAttribute="trailing" constant="-20" id="39d-1T-SGH"/>
+                            <constraint firstItem="BNT-SW-fPa" firstAttribute="top" secondItem="PbH-VC-dcs" secondAttribute="topMargin" id="6eU-gt-CMn"/>
+                            <constraint firstItem="BNT-SW-fPa" firstAttribute="leading" secondItem="PbH-VC-dcs" secondAttribute="leadingMargin" constant="-20" id="dJE-TU-gT0"/>
+                            <constraint firstItem="9Xh-MK-tzB" firstAttribute="top" secondItem="BNT-SW-fPa" secondAttribute="bottom" id="xs1-oF-bCz"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="mapView" destination="BNT-SW-fPa" id="J91-Ib-X2I"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cafes" id="S21-Ij-8Hj">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="yry-wx-qT6">
+                            <color key="tintColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="signOut:" destination="3Xa-g6-LSJ" id="l6f-tU-uT6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" id="S6H-7d-Wsb">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rES-wA-XUe">
+                                <rect key="frame" x="317" y="1" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Me"/>
+                                <connections>
+                                    <action selector="profileButtonTapped:" destination="3Xa-g6-LSJ" eventType="touchUpInside" id="JnI-TM-gI4"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mainView" destination="PbH-VC-dcs" id="XGc-0T-yHp"/>
+                        <segue destination="bLF-Qc-8Mf" kind="presentation" identifier="viewProfile" id="1cD-RI-sme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTJ-UV-8SU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313.5" y="366.5"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="2Er-o1-E4b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="bLF-Qc-8Mf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYY-xe-5Im" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764.5" y="367"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Me" width="28" height="28"/>
+    </resources>
+</document>

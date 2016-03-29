@@ -11,4 +11,5 @@ pod 'RxBlocking', '~> 2.1'
 pod 'Gloss'
 pod 'RealmSwift'
 pod 'QuadratTouch', '>= 1.0'
+pod 'Firebase'
 
