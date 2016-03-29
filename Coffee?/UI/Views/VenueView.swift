@@ -12,9 +12,9 @@ import UIKit
 class VenueView: UIView {
     
     // MARK: - Outlets
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var tipLabel: UILabel!
     
     // MARK: - Properties
     var view: UIView!
@@ -45,8 +45,8 @@ class VenueView: UIView {
     }
     
     private func setupVenue(venue: RealmVenue) {
-        nameLabel.text = venue.name
         addressLabel.text = venue.address
         ratingLabel.text = "Rating: " + String(venue.rating)
+        tipLabel.text = venue.tip
     }
 }

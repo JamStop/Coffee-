@@ -128,10 +128,10 @@ extension MapViewController: MKMapViewDelegate {
         annotationView.animatesDrop = true
         
         let rating = venue.rating
-        if rating >= 9.0 {
+        if rating >= 8.5 {
             annotationView.pinTintColor = UIColor.greenColor()
         }
-        else if rating >= 8.0 {
+        else if rating >= 7.5 {
             annotationView.pinTintColor = UIColor.yellowColor()
         }
         
@@ -144,9 +144,9 @@ extension MapViewController: MKMapViewDelegate {
         
         let vc = UIViewController()
         vc.view = VenueView(frame: vc.view.frame, venue: venue)
-        vc.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(MapViewController.dismissVenueVC)))
+        vc.navigationItem.title = venue.name
         
-        self.presentViewController(vc, animated: true, completion: nil)
+        self.navigationController!.pushViewController(vc, animated: true)
         
     }
     

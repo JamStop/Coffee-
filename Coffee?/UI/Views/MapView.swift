@@ -36,6 +36,7 @@ class MapView: UIView {
             point.title = venue.name + ", Rating: " + String(venue.rating)
             point.subtitle = venue.address
             point.venue = venue
+
             
             self.mapView.addAnnotation(point)
         }

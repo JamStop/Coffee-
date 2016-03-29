@@ -20,4 +20,5 @@ class RealmVenue: Object {
     dynamic var url = ""
     dynamic var rating = 0.0
     dynamic var ratingColor = ""
+    dynamic var tip = ""
 }

@@ -9,8 +9,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VenueView" customModule="Coffee_" customModuleProvider="target">
             <connections>
                 <outlet property="addressLabel" destination="r1p-or-Hvq" id="pEv-td-7MF"/>
-                <outlet property="nameLabel" destination="Tlp-Ai-QPo" id="ygd-Wz-jl0"/>
                 <outlet property="ratingLabel" destination="lhm-TW-sk5" id="nqE-y3-F7h"/>
+                <outlet property="tipLabel" destination="yEr-Yu-1vp" id="Yr6-ds-wzh"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,42 +19,44 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhm-TW-sk5">
-                    <rect key="frame" x="136" y="209" width="101.5" height="21"/>
+                    <rect key="frame" x="136" y="178" width="101.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlp-Ai-QPo">
-                    <rect key="frame" x="88" y="62" width="198" height="42"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue Address Venue Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1p-or-Hvq">
+                    <rect key="frame" x="62" y="103" width="250.5" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue Tip" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEr-Yu-1vp">
+                    <rect key="frame" x="142" y="288" width="90" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTM-Pr-Yda">
-                    <rect key="frame" x="140" y="379.5" width="94" height="41"/>
+                    <rect key="frame" x="140" y="513" width="94" height="41"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="Check In">
                         <color key="titleColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue Address Venue Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1p-or-Hvq">
-                    <rect key="frame" x="70" y="156" width="234.5" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="lhm-TW-sk5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Djy-1F-pxW"/>
-                <constraint firstItem="r1p-or-Hvq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.5" id="E1u-Hb-Ocf"/>
+                <constraint firstItem="r1p-or-Hvq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.4" id="E1u-Hb-Ocf"/>
                 <constraint firstItem="r1p-or-Hvq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ea2-NN-IjE"/>
-                <constraint firstItem="Tlp-Ai-QPo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GF5-A0-Pnn"/>
-                <constraint firstItem="hTM-Pr-Yda" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.2" id="JuP-rP-rXv"/>
+                <constraint firstItem="hTM-Pr-Yda" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.6" id="JuP-rP-rXv"/>
+                <constraint firstItem="yEr-Yu-1vp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="M3B-pX-bXs"/>
                 <constraint firstItem="r1p-or-Hvq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="OlO-dN-uVa"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r1p-or-Hvq" secondAttribute="trailing" constant="30" id="akW-DK-Z7G"/>
-                <constraint firstItem="Tlp-Ai-QPo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.25" id="fSj-yW-a8h"/>
-                <constraint firstItem="lhm-TW-sk5" firstAttribute="top" secondItem="r1p-or-Hvq" secondAttribute="bottom" constant="32" id="hcP-61-Bkc"/>
+                <constraint firstItem="lhm-TW-sk5" firstAttribute="top" secondItem="r1p-or-Hvq" secondAttribute="bottom" constant="15" id="hcP-61-Bkc"/>
+                <constraint firstItem="yEr-Yu-1vp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="mQa-uz-iAh"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yEr-Yu-1vp" secondAttribute="trailing" constant="40" id="nug-jN-ZIY"/>
+                <constraint firstItem="yEr-Yu-1vp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.9" id="p4z-Qc-G3i"/>
                 <constraint firstItem="hTM-Pr-Yda" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xXb-eJ-oZz"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

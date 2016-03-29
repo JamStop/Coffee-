@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-254.5" y="344.5"/>
         </scene>
-        <!--Nearby Coffee Shops-->
+        <!--Cafes-->
         <scene sceneID="O0E-Ae-tkv">
             <objects>
                 <viewController id="3Xa-g6-LSJ" customClass="MapViewController" customModule="Coffee_" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                             <outlet property="mapView" destination="BNT-SW-fPa" id="J91-Ib-X2I"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Nearby Coffee Shops" id="S21-Ij-8Hj"/>
+                    <navigationItem key="navigationItem" title="Cafes" id="S21-Ij-8Hj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mainView" destination="PbH-VC-dcs" id="XGc-0T-yHp"/>

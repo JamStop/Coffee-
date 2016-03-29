@@ -39,7 +39,9 @@ class RealmHelper {
         venues.id = 0
         for item in items {
             guard let venue = item["venue"] else { fatalError("Failed to retrieve venue") }
+            guard let tips = item["tips"] as? [AnyObject] else { fatalError("Failed to retrieve tips") }
             guard let venueJson = JSONVenue(json: venue as! [String:AnyObject]) else { fatalError("Failed to parse venue") }
+            guard let tipJson = JSONTip(json: tips[0] as! [String:AnyObject]) else { fatalError("Failed to parse tips") }
             
             // "Unsafe" block. However, any failure would have occured in the JSONVenue casting, so these unwraps are safe.
             let newVenue = RealmVenue()
@@ -53,6 +55,7 @@ class RealmHelper {
 //            newVenue.url = venueJson.url!
             newVenue.rating = venueJson.rating!
             newVenue.ratingColor = venueJson.ratingColor ?? "000000"
+            newVenue.tip = tipJson.text!
             
             venues.venues.append(newVenue)
         }
