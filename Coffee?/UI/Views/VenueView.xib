@@ -31,7 +31,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTM-Pr-Yda">
-                    <rect key="frame" x="140" y="313" width="94" height="41"/>
+                    <rect key="frame" x="140" y="379.5" width="94" height="41"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="Check In">
                         <color key="titleColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,7 +50,7 @@
                 <constraint firstItem="r1p-or-Hvq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.5" id="E1u-Hb-Ocf"/>
                 <constraint firstItem="r1p-or-Hvq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ea2-NN-IjE"/>
                 <constraint firstItem="Tlp-Ai-QPo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GF5-A0-Pnn"/>
-                <constraint firstItem="hTM-Pr-Yda" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JuP-rP-rXv"/>
+                <constraint firstItem="hTM-Pr-Yda" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.2" id="JuP-rP-rXv"/>
                 <constraint firstItem="r1p-or-Hvq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="OlO-dN-uVa"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r1p-or-Hvq" secondAttribute="trailing" constant="30" id="akW-DK-Z7G"/>
                 <constraint firstItem="Tlp-Ai-QPo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.25" id="fSj-yW-a8h"/>

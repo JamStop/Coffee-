@@ -18,6 +18,15 @@
 		BF1F19FB1CA9004700EC844E /* VenueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1F19FA1CA9004700EC844E /* VenueView.xib */; };
 		BF1F19FF1CA90A3800EC844E /* UIColorWithHexValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F19FE1CA90A3800EC844E /* UIColorWithHexValue.swift */; };
 		BF6DD8B8C93F114A795F6CD5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36E953CF3CE6473E0A9094D /* Pods.framework */; };
+		BFB7E4601CA9E32A00966040 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E45F1CA9E32A00966040 /* LoginViewController.swift */; };
+		BFB7E4621CA9E45300966040 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB7E4611CA9E45300966040 /* Login.storyboard */; };
+		BFB7E4641CA9E84800966040 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB7E4631CA9E84800966040 /* LoginView.xib */; };
+		BFB7E4661CA9E85900966040 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4651CA9E85900966040 /* LoginView.swift */; };
+		BFB7E4691CAA046200966040 /* LoginWithFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E4671CAA046200966040 /* LoginWithFacebook.swift */; };
+		BFB7E46A1CAA046200966040 /* LoginWithFacebook.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB7E4681CAA046200966040 /* LoginWithFacebook.xib */; };
+		BFB7E46C1CAA0A3600966040 /* LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E46B1CAA0A3600966040 /* LoadingHUD.swift */; };
+		BFB7E46E1CAA0AB900966040 /* FirebaseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E46D1CAA0AB900966040 /* FirebaseLoginHelper.swift */; };
+		BFB7E4701CAA0CD500966040 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E46F1CAA0CD500966040 /* RealmUser.swift */; };
 		BFC402C11C9DE8FC00CD159F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */; };
 		BFC402C21C9DE8FC00CD159F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */; };
 		BFC402C31C9DE8FC00CD159F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */; };
@@ -45,6 +54,15 @@
 		BF1F19F81CA9003A00EC844E /* VenueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueView.swift; sourceTree = "<group>"; };
 		BF1F19FA1CA9004700EC844E /* VenueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueView.xib; sourceTree = "<group>"; };
 		BF1F19FE1CA90A3800EC844E /* UIColorWithHexValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorWithHexValue.swift; sourceTree = "<group>"; };
+		BFB7E45F1CA9E32A00966040 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BFB7E4611CA9E45300966040 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BFB7E4631CA9E84800966040 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		BFB7E4651CA9E85900966040 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BFB7E4671CAA046200966040 /* LoginWithFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithFacebook.swift; sourceTree = "<group>"; };
+		BFB7E4681CAA046200966040 /* LoginWithFacebook.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWithFacebook.xib; sourceTree = "<group>"; };
+		BFB7E46B1CAA0A3600966040 /* LoadingHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingHUD.swift; sourceTree = "<group>"; };
+		BFB7E46D1CAA0AB900966040 /* FirebaseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseLoginHelper.swift; sourceTree = "<group>"; };
+		BFB7E46F1CAA0CD500966040 /* RealmUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
 		BFC402BE1C9DE8FC00CD159F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		BFC402BF1C9DE8FC00CD159F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		BFC402C01C9DE8FC00CD159F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -99,6 +117,7 @@
 		BFC402B11C9DE12A00CD159F /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				BFB7E46D1CAA0AB900966040 /* FirebaseLoginHelper.swift */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -135,6 +154,7 @@
 				BF1F19EE1CA88A7A00EC844E /* RealmVenue.swift */,
 				BF1F19F01CA88A8B00EC844E /* RealmHelper.swift */,
 				BF1F19F21CA88A9300EC844E /* RealmVenues.swift */,
+				BFB7E46F1CAA0CD500966040 /* RealmUser.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -170,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1F19F41CA8C57600EC844E /* VenuePointAnnotation.swift */,
+				BFB7E46B1CAA0A3600966040 /* LoadingHUD.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -178,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				BFC402C71C9F4F2500CD159F /* Main.storyboard */,
+				BFB7E4611CA9E45300966040 /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -186,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				BFC402C91C9F4F4500CD159F /* MapViewController.swift */,
+				BFB7E45F1CA9E32A00966040 /* LoginViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -201,9 +224,13 @@
 		BFC402BD1C9DE12A00CD159F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BFB7E4671CAA046200966040 /* LoginWithFacebook.swift */,
+				BFB7E4681CAA046200966040 /* LoginWithFacebook.xib */,
 				BFC402CB1C9F4F6900CD159F /* MapView.swift */,
 				BF1F19F81CA9003A00EC844E /* VenueView.swift */,
 				BF1F19FA1CA9004700EC844E /* VenueView.xib */,
+				BFB7E4651CA9E85900966040 /* LoginView.swift */,
+				BFB7E4631CA9E84800966040 /* LoginView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,7 +344,10 @@
 			files = (
 				BFFD87001C9DDD4600AABCDF /* LaunchScreen.storyboard in Resources */,
 				BFC402C51C9DEB4000CD159F /* Config.plist in Resources */,
+				BFB7E4621CA9E45300966040 /* Login.storyboard in Resources */,
+				BFB7E4641CA9E84800966040 /* LoginView.xib in Resources */,
 				BFFD86FD1C9DDD4600AABCDF /* Assets.xcassets in Resources */,
+				BFB7E46A1CAA046200966040 /* LoginWithFacebook.xib in Resources */,
 				BFC402C81C9F4F2500CD159F /* Main.storyboard in Resources */,
 				BF1F19FB1CA9004700EC844E /* VenueView.xib in Resources */,
 			);
@@ -380,8 +410,11 @@
 			files = (
 				BF1F19EB1CA8829400EC844E /* JSONLocation.swift in Sources */,
 				BF1F19F51CA8C57600EC844E /* VenuePointAnnotation.swift in Sources */,
+				BFB7E4701CAA0CD500966040 /* RealmUser.swift in Sources */,
 				BF1F19F11CA88A8B00EC844E /* RealmHelper.swift in Sources */,
+				BFB7E4601CA9E32A00966040 /* LoginViewController.swift in Sources */,
 				BF1F19FF1CA90A3800EC844E /* UIColorWithHexValue.swift in Sources */,
+				BFB7E4691CAA046200966040 /* LoginWithFacebook.swift in Sources */,
 				BFFD86F61C9DDD4600AABCDF /* AppDelegate.swift in Sources */,
 				BF1F19ED1CA883EB00EC844E /* JSONContact.swift in Sources */,
 				BFC402D01C9F4F8C00CD159F /* FoursquareAPI.swift in Sources */,
@@ -391,7 +424,10 @@
 				BF1F19EF1CA88A7A00EC844E /* RealmVenue.swift in Sources */,
 				BF1F19F31CA88A9300EC844E /* RealmVenues.swift in Sources */,
 				BFC402CE1C9F4F7D00CD159F /* MapViewModel.swift in Sources */,
+				BFB7E4661CA9E85900966040 /* LoginView.swift in Sources */,
+				BFB7E46C1CAA0A3600966040 /* LoadingHUD.swift in Sources */,
 				BF1F19F91CA9003A00EC844E /* VenueView.swift in Sources */,
+				BFB7E46E1CAA0AB900966040 /* FirebaseLoginHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
