@@ -50,15 +50,39 @@
                             <outlet property="mapView" destination="BNT-SW-fPa" id="J91-Ib-X2I"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Cafes" id="S21-Ij-8Hj"/>
+                    <navigationItem key="navigationItem" title="Cafes" id="S21-Ij-8Hj">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="S6H-7d-Wsb">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rES-wA-XUe">
+                                <rect key="frame" x="317" y="1" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Me"/>
+                                <connections>
+                                    <action selector="profileButtonTapped:" destination="3Xa-g6-LSJ" eventType="touchUpInside" id="JnI-TM-gI4"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mainView" destination="PbH-VC-dcs" id="XGc-0T-yHp"/>
+                        <segue destination="bLF-Qc-8Mf" kind="presentation" identifier="viewProfile" id="1cD-RI-sme"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTJ-UV-8SU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="345"/>
+            <point key="canvasLocation" x="313.5" y="366.5"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="2Er-o1-E4b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="bLF-Qc-8Mf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYY-xe-5Im" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764.5" y="367"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Me" width="28" height="28"/>
+    </resources>
 </document>

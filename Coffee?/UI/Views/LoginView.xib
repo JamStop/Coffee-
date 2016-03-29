@@ -46,8 +46,8 @@
                         <constraint firstAttribute="width" secondItem="O8h-6c-LPW" secondAttribute="height" multiplier="144:23" id="a5h-I0-m8Z"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBQ-FX-71p">
-                    <rect key="frame" x="172" y="353" width="30" height="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBQ-FX-71p">
+                    <rect key="frame" x="172" y="356" width="30" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <color key="textColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>

@@ -18,11 +18,16 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mainView: MapView!
     let api = FirebaseAPI()
 
+    // MARK: - Functionality
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupLocationManager()
         delegateSetups()
+    }
+    
+    @IBAction func profileButtonTapped(sender: AnyObject) {
+        self.performSegueWithIdentifier("viewProfile", sender: sender)
     }
     
     // MARK: - Alert Presentations
